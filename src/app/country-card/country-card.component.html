@@ -1,0 +1,9 @@
+<section class="card" (click)="outputToConsole()">
+  <img [src]="countryHome.flags.svg" [alt]="countryHome.flags.alt" />
+  <h1>{{ countryHome.name.official }}</h1>
+  <div>
+    <p><b>Population:</b>{{ countryHome.population }}</p>
+    <p><b>Region:</b>{{ countryHome.region }}</p>
+    <p><b>Capital:</b>{{ countryHome.capital }}</p>
+  </div>
+</section>
