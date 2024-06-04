@@ -22,6 +22,7 @@ export class CountriesApiService {
   }
 
   async get_countries(name: string): Promise<CountryHome[]> {
+    console.log("calling")
     let url = `${this.countriesUrl}/all?fields=${this.base_fields}`;
     if (name !== '') {
       url = `${this.countriesUrl}/name/${name}?fields=${this.base_fields}`;

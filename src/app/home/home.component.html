@@ -1,5 +1,5 @@
 <section>
-  <input />
+  <input (input)="search($event)"/>
   <section class="country-list">
     <div *ngFor="let country of countries">
       <app-country-card [countryHome]="country" />
